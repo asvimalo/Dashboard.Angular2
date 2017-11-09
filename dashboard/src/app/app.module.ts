@@ -7,11 +7,12 @@ import { EmployeesComponent } from './employees/employees.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-      EmployeesComponent,
-      ProjectsComponent
+    EmployeesComponent,
+
   ],
   imports: [
     BrowserModule
