@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
   declarations: [
     AppComponent,
     EmployeesComponent,
+    ProjectsComponent
 
   ],
   imports: [
