@@ -1,3 +1,44 @@
-<p>
-  employees works!
-</p>
+<div class="container">
+  <h1>Add Employee</h1>
+  <form>
+    <div class="form-group">
+      <label for="firstName">Firstname</label>
+      <input type="text" class="form-control" id="firstName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Lastname</label>
+      <input type="text" class="form-control" id="lastName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="personNumber">Start Date</label>
+      <input type="number" class="form-control" id="personNumber">
+    </div>
+
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label for="knowledge">New Knowledge</label>
+        <input type="text" class="form-control" id="knowledge">
+      </div>
+
+      <div class="form-group col-sm-6">
+        <label for="knowdleges">Knowledge</label>
+        <select class="form-control" id="knowdleges" required>
+          <option *ngFor="let knowledge of knowdleges" [value]="knowledge">{{knowledge}}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="power">Employees</label>
+      <span class="control-fileupload">
+        <label for="fileInput">Choose a file :</label>
+        <input type="file" id="fileInput">
+      </span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+  </form>
+</div>
