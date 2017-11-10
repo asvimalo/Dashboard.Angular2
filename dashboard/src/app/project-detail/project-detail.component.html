@@ -1,3 +1,11 @@
-<p>
-  project-detail works!
-</p>
+<div *ngIf="project">
+
+  <h2>{{ project.projectName | uppercase }} Details</h2>
+  <div><span>id: </span>{{project.projectId}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="employee.project" placeholder="'{{ project.projectName | uppercase }}'">
+    </label>
+  </div>
+
+</div>

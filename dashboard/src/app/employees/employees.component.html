@@ -3,18 +3,8 @@
   <li *ngFor="let employee of employees"
     [class.selected]="employee === selectedEmployee"
     (click)="onSelect(employee)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
+    <span class="badge">{{employee.employeeId}}</span> {{employee.firstName}}
   </li>
 </ul>
 
-<div *ngIf="selectedEmployee">
-
-  <h2>{{ selectedHero.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{selectedHero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedEmployee.firstName" placeholder="First Name">
-    </label>
-  </div>
-
-</div>
+<app-employee-detail [employee]="selectedEmployee"></app-employee-detail>

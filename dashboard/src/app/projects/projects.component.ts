@@ -10,9 +10,10 @@ import {Project} from '../entities/entities';
 export class ProjectsComponent implements OnInit {
 
   selectedProject: Project;
-  //Get projects TODO (service)
-  constructor() { }
 
+  //Get projects TODO (service)
+  
+  constructor() { }
 
 
   ngOnInit() {

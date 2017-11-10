@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Employee } from '../entities/entities';
 
 @Component({
   selector: 'app-employee-detail',
@@ -7,6 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class EmployeeDetailComponent implements OnInit {
+  
+  @Input() employee: Employee;
 
   constructor() { }
 

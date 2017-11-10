@@ -1,3 +1,11 @@
-<p>
-  employee-detail works!
-</p>
+<div *ngIf="employee">
+
+  <h2>{{ employee.firstName | uppercase }} Details</h2>
+  <div><span>id: </span>{{employee.employeeId}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="employee.firstName" placeholder="First Name">
+    </label>
+  </div>
+
+</div>
