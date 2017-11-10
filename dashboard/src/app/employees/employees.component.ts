@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { RepoEmployee } from '../repo-employee.service';
 import { Employee } from '../entities/entities';
 
 @Component({
@@ -10,14 +11,19 @@ import { Employee } from '../entities/entities';
 export class EmployeesComponent implements OnInit {
 
     selectedEmployee: Employee;
+    employees: Employee[];
     //Get employees TODO (service)
-    constructor() { }
 
-    knowdleges = ['HTML5', 'CSS3',
-        'AngularJS', 'Xamarin'];
+    constructor(private repo:RepoEmployee) { }
+
+    getEmployees():void {
+      this.employees = this.repo.getEmployees();
+    }
 
     ngOnInit() {
+      this.getEmployees();
     }
+
     onSelected(employee: Employee):void{
       this.selectedEmployee = employee;
     }

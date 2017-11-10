@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
@@ -11,7 +11,8 @@ import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { ProjectAddComponent } from './project-add/project-add.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import {RepoEmployee} from './repo-employee.service';
+import {RepoProject} from './repo-project.service';
 
 
 @NgModule({
@@ -28,9 +29,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RepoEmployee,RepoProject],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
