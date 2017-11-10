@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {Project} from '../entities/entities';
 
 @Component({
   selector: 'app-projects',
@@ -8,16 +9,18 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-    constructor() { }
+  selectedProject: Project;
+  //Get projects TODO (service)
+  constructor() { }
 
-    clients = ['Ikea', 'Sigma',
-        'Ford', 'Newton'];
 
-    employees = ['Kalle Anka', 'Timon Andersson',
-        'Pumba Linée', 'Simba Kungen'];
 
-    ngOnInit() {
-    }
+  ngOnInit() {
+  }
+
+  onSelected(project: Project):void{
+    this.selectedProject = project;
+  }
 
     addProject(): void {
 

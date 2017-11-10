@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Employee } from '../entities/entities';
 
 @Component({
   selector: 'app-employees',
@@ -8,6 +9,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class EmployeesComponent implements OnInit {
 
+    selectedEmployee: Employee;
+    //Get employees TODO (service)
     constructor() { }
 
     knowdleges = ['HTML5', 'CSS3',
@@ -15,7 +18,9 @@ export class EmployeesComponent implements OnInit {
 
     ngOnInit() {
     }
-
+    onSelected(employee: Employee):void{
+      this.selectedEmployee = employee;
+    }
     addEmployee(): void {
 
     }
