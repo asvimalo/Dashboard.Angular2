@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { RepoEmployee } from '../repo-employee.service';
+import { RepoEmployee } from '../services/repo-employee.service';
 import { Employee } from '../entities/entities';
 
 @Component({

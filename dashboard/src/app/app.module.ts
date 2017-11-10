@@ -11,8 +11,8 @@ import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { ProjectAddComponent } from './project-add/project-add.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import {RepoEmployee} from './repo-employee.service';
-import {RepoProject} from './repo-project.service';
+import {RepoEmployee} from './services/repo-employee.service';
+import {RepoProject} from './services/repo-project.service';
 
 
 @NgModule({

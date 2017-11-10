@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {Project} from '../entities/entities';
-import { RepoProject } from '../repo-project.service';
+import { RepoProject } from '../services/repo-project.service';
 
 
 @Component({

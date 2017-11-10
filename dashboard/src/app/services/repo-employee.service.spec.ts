@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { RepoEmployeeService } from './repo-employee.service';
+import { RepoEmployee } from './repo-employee.service';
 
 describe('RepoEmployeeService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [RepoEmployeeService]
+      providers: [RepoEmployee]
     });
   });
 
-  it('should be created', inject([RepoEmployeeService], (service: RepoEmployeeService) => {
+  it('should be created', inject([RepoEmployee], (service: RepoEmployee) => {
     expect(service).toBeTruthy();
   }));
 });
