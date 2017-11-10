@@ -8,6 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { ProjectAddComponent } from './project-add/project-add.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 
@@ -18,7 +19,8 @@ import { ProjectAddComponent } from './project-add/project-add.component';
     ProjectsComponent,
     EmployeeDetailComponent,
     EmployeeAddComponent,
-    ProjectAddComponent
+    ProjectAddComponent,
+    ProjectDetailComponent
 
   ],
   imports: [
