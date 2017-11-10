@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { EmployeeAddComponent } from './employee-add/employee-add.component';
 
 
 
@@ -14,7 +15,8 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
     AppComponent,
     EmployeesComponent,
     ProjectsComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    EmployeeAddComponent
 
   ],
   imports: [
