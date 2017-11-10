@@ -9,6 +9,7 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { ProjectAddComponent } from './project-add/project-add.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -20,7 +21,8 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     EmployeeDetailComponent,
     EmployeeAddComponent,
     ProjectAddComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    DashboardComponent
 
   ],
   imports: [
