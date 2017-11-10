@@ -8,11 +8,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class EmployeesComponent implements OnInit {
 
-  employee = "Employee";
+    constructor() { }
 
-  constructor() { }
+    knowdleges = ['HTML5', 'CSS3',
+        'AngularJS', 'Xamarin'];
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    addEmployee(): void {
+
+    }
 
 }

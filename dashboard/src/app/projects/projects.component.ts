@@ -8,9 +8,19 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    clients = ['Ikea', 'Sigma',
+        'Ford', 'Newton'];
+
+    employees = ['Kalle Anka', 'Timon Andersson',
+        'Pumba Linée', 'Simba Kungen'];
+
+    ngOnInit() {
+    }
+
+    addProject(): void {
+
+    }
 
 }
