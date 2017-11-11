@@ -29,6 +29,6 @@ export class EmployeeDetailComponent implements OnInit {
       .subscribe(employee => this.employee = employee);
   }
   goBack(): void {
-  this.location.back();
+    this.location.back();
   }
 }

@@ -11,12 +11,18 @@ import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { ProjectAddComponent } from './project-add/project-add.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import {RepoEmployee} from './services/repo-employee.service';
-import {RepoProject} from './services/repo-project.service';
+import { RepoEmployee } from './services/repo-employee.service';
+import { RepoProject } from './services/repo-project.service';
 import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule
+  ],
   declarations: [
     AppComponent,
     EmployeesComponent,
@@ -26,13 +32,6 @@ import { AppRoutingModule } from './/app-routing.module';
     ProjectAddComponent,
     ProjectDetailComponent,
     DashboardComponent
-
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    AppRoutingModule
   ],
   providers: [RepoEmployee,RepoProject],
   bootstrap: [AppComponent]

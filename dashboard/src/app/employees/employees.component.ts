@@ -17,14 +17,15 @@ export class EmployeesComponent implements OnInit {
 
     constructor(private repo:RepoEmployee) { }
 
+    ngOnInit() {
+      this.getEmployees();
+    }
     getEmployees():void {
       this.repo.getEmployees()
         .subscribe(employees => this.employees = employees)
     }
 
-    ngOnInit() {
-      this.getEmployees();
-    }
+
 
 
 }

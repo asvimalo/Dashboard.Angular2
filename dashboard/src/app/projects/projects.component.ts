@@ -17,13 +17,15 @@ export class ProjectsComponent implements OnInit {
 
   constructor(private repo:RepoProject) { }
 
+  ngOnInit() {
+    this.getProjects();
+  }
+  
   getProjects():void {
     this.repo.getProjects()
       .subscribe(projects => this.projects = projects);
   }
 
-  ngOnInit() {
-    this.getProjects();
-  }
+
 
 }
