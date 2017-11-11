@@ -7,7 +7,8 @@ import { ProjectsComponent } from './projects/projects.component';
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'employees', component: EmployeesComponent },
-  { path: 'projects', component: ProjectsComponent }
+  { path: 'projects', component: ProjectsComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
