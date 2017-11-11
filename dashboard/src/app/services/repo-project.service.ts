@@ -14,6 +14,9 @@ export class RepoProject {
     //let projects = new Array<Project>();
     return of (projects);
   }
+  getProject(id:number): Observable<Project> {
+    return of(projects.find(project => project.projectId === id))
+  }
 }
 export const projects: Project[] = [
 { projectId: 11, projectName: 'Mr. Nice', phases: new Array<Phase>(), startDate: new Date(), stopDate: new Date(), assignments: new Array<Assignment>(),clientId: 1,client: null, timeBudget: 40, notes: ''},

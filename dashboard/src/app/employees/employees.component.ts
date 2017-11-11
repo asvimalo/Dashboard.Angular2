@@ -13,7 +13,7 @@ export class EmployeesComponent implements OnInit {
 
     selectedEmployee: Employee;
     employees: Employee[] = new Array<Employee>();
-  
+
 
     constructor(private repo:RepoEmployee) { }
 
@@ -26,11 +26,5 @@ export class EmployeesComponent implements OnInit {
       this.getEmployees();
     }
 
-    onSelect(employee: Employee):void{
-      this.selectedEmployee = employee;
-    }
-    addEmployee(): void {
-
-    }
 
 }

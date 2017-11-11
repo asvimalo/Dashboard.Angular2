@@ -26,12 +26,4 @@ export class ProjectsComponent implements OnInit {
     this.getProjects();
   }
 
-  onSelect(project: Project):void{
-    this.selectedProject = project;
-  }
-
-    addProject(): void {
-
-    }
-
 }

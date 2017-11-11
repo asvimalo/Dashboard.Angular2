@@ -9,9 +9,12 @@ export class RepoEmployee {
 
   constructor(){ }
 
-  getEmployees(): Observable<Employee[]>{
+  getEmployees(): Observable<Employee[]> {
 
     return of(employees);
+  }
+  getEmployee(id:number): Observable<Employee> {
+    return of(employees.find(employee => employee.employeeId === id))
   }
 
 }
