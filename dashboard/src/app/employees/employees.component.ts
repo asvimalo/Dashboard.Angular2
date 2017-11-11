@@ -26,7 +26,7 @@ export class EmployeesComponent implements OnInit {
       this.getEmployees();
     }
 
-    onSelected(employee: Employee):void{
+    onSelect(employee: Employee):void{
       this.selectedEmployee = employee;
     }
     addEmployee(): void {

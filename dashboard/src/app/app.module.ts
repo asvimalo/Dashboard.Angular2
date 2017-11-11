@@ -13,6 +13,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {RepoEmployee} from './services/repo-employee.service';
 import {RepoProject} from './services/repo-project.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {RepoProject} from './services/repo-project.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [RepoEmployee,RepoProject],
   bootstrap: [AppComponent]
