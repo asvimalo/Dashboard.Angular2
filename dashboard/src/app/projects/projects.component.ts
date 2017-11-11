@@ -19,7 +19,8 @@ export class ProjectsComponent implements OnInit {
   constructor(private repo:RepoProject) { }
 
   getProjects():void {
-    this.projects = this.repo.getProjects();
+    this.repo.getProjects()
+      .subscribe(projects => this.projects = projects);
   }
 
   ngOnInit() {

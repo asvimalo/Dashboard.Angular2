@@ -6,9 +6,6 @@ import { of } from 'rxjs/observable/of';
 
 @Injectable()
 export class RepoEmployee {
-  employee1: Employee = new Employee ();
-  employee2: Employee = new Employee ();
-  //employees: Employee[] = [];
 
   constructor(){ }
 
@@ -16,7 +13,6 @@ export class RepoEmployee {
 
     return of(employees);
   }
-
 
 }
 
