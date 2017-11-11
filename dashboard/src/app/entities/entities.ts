@@ -3,8 +3,8 @@ export class Employee {
   firstName:string;
   lastName:string;
   personNr:string;
-  acquiredKnowledges: Array<Knowledge>;
-  assignments: Array<Assignment>;
+  acquiredKnowledges: AcquiredKnowledge[];
+  assignments: Assignment[];
 
 }
 export class Project {
