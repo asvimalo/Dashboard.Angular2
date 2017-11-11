@@ -13,7 +13,7 @@ export class EmployeesComponent implements OnInit {
 
     selectedEmployee: Employee;
     employees: Employee[] = new Array<Employee>();
-    //Get employees TODO (service)
+  
 
     constructor(private repo:RepoEmployee) { }
 

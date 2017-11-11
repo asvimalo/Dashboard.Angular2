@@ -14,7 +14,6 @@ export class ProjectsComponent implements OnInit {
   selectedProject: Project;
   projects: Project[];
 
-  //Get projects TODO (service)
 
   constructor(private repo:RepoProject) { }
 
