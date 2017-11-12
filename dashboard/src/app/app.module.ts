@@ -14,6 +14,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RepoEmployee } from './services/repo-employee.service';
 import { RepoProject } from './services/repo-project.service';
 import { AppRoutingModule } from './/app-routing.module';
+import { MessagesComponent } from './messages/messages.component';
+import { MessageService } from './services/message.service';
+import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 
 
 @NgModule({
@@ -31,9 +34,11 @@ import { AppRoutingModule } from './/app-routing.module';
     EmployeeAddComponent,
     ProjectAddComponent,
     ProjectDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    MessagesComponent,
+    EmployeeSearchComponent
   ],
-  providers: [RepoEmployee,RepoProject],
+  providers: [RepoEmployee,RepoProject, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

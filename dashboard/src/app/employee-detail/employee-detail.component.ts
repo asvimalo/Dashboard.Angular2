@@ -31,4 +31,8 @@ export class EmployeeDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+  save(): void {
+    this.repoEmployee.updateEmployee(this.employee)
+      .subscribe(() => this.goBack());
+  }
 }
