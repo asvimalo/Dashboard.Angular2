@@ -14,7 +14,7 @@ const httpOptions = {
 @Injectable()
 export class RepoEmployee {
 
-  private employeesUrl = 'http:localhost:8890/api/dasboard/employees';
+  private employeesUrl = 'http:localhost:8890/api/dashboard/employees';
 
   constructor(
     private http: HttpClient,
