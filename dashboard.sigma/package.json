@@ -1,5 +1,5 @@
 {
-  "name": "dashboard",
+  "name": "dashboard.sigma",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -45,12 +45,5 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
-  },
-  "description": "This project it intended to help developers to organise and keep control of their project - SIGMA itc Dashboard",
-  "main": "karma.conf.js",
-  "repository": {
-    "type": "git",
-    "url": "asvimalo"
-  },
-  "author": "Andrés&Katrina"
+  }
 }
