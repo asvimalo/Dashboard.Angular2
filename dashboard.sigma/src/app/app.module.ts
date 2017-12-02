@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { ProjectComponent } from './project/project.component';
-
+import { MatButtonToggleModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { ProjectComponent } from './project/project.component';
     FormsModule,
     HttpModule,
     AdminModule,
-    AppRoutingModule     
+    AppRoutingModule,
+    MatButtonToggleModule     
   ],
   providers: [],
   bootstrap: [AppComponent]
